@@ -1,0 +1,293 @@
+:root {
+ --butHover: rgba(160,160,160,1);
+ --button: rgba(180,180,180,1);
+ --panelBack: rgba(190,190,190,1);
+ --barders: rgba(20, 20, 20, 1);
+ --mainBack: rgba(155, 155, 155, 1);
+ --mainBack1: rgba(0, 0, 0, 1);
+ --mainBack2: rgba(255, 255, 255, 1);
+ --textc: rgb(0,0,0);
+ --toop:rgb(0,0,0);
+ --botom:rgb(255,255,255);
+}
+
+p {
+color:var(--textc);
+}
+
+
+
+/*color*/
+/*
+
+set 1:
+ --butHover: rgba(221,221,221,1);
+ --button: rgba(204,204,204,1);
+ --panelBack: rgba(187,187,187,1);
+ --dark10: rgba(170,170,170,1);
+ --dark9: rgba(153,153,153,1);
+ --barders: rgba(136, 136, 136, 1);
+ --mainBack: rgba(119, 119, 119, 1);
+ --dark6: rgba(102, 102, 102, 1);
+ --dark5: rgba(85, 85, 85, 1);
+ --dark4: rgba(68, 68, 68, 1);
+ --dark3: rgba(51, 51, 51, 1);
+ 
+ set 2:
+  --butHover: rgba(13,13,13,1);
+ --button: rgba(12,12,12,1);
+ --panelBack: rgba(11,11,11,1);
+ --dark10: rgba(10,10,10,1);
+ --dark9: rgba(9,9,9,1);
+ --barders: rgba(8, 8, 8, 1);
+ --mainBack: rgba(7, 7, 7, 1);
+ --dark6: rgba(6, 6, 6, 1);
+ --dark5: rgba(5, 5, 5, 1);
+ --dark4: rgba(4, 4, 4, 1);
+ --dark3: rgba(3, 3, 3, 1);
+*/
+
+* {
+box-sizing:border-box;
+}
+
+/* Extra small devices (phones, 600px and down) 
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) 
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) 
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) 
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) {...}
+*/
+
+
+@media only screen and (max-width: 600px) {
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+[class*="coe-"] {
+  width: 50%;
+}
+
+  [class*="upgradecolumn"] {
+	  height:20%;
+  }
+  [class*="buildcolumn"] {
+	  height:25%;
+  }
+  [class*="clickyColumn"] {
+	  height:40%;
+  }
+  [class*="DollarBills"] {
+	  width:40%;
+  }
+}
+@media only screen and (min-width: 601px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+  .coe-{width:50%;}
+  .upgradecolumn {
+	  height:50%;
+  }
+  .clickyColumn {
+	  height:50%;
+  }
+  .buildcolumn {
+	  height:50%;
+  }
+  .build {
+	 width:50%; 
+  }
+}
+
+@media only screen and (min-width: 768px) {
+/* For desktop */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.coe-{width:100%;}
+  .upgradecolumn {
+	  height:80%;
+  }
+  .clickyColumn {
+	  height:80%;
+  }
+  .buildcolumn {
+	  height:80%;
+  }
+  .DollarBills {
+  	  width:80%;
+  }
+  .build {
+	  width:100%;
+  }
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html{
+background-color:var(--mainBack);
+background-image: linear-gradient(to top, red 50%, blue 50%);
+}
+
+.DollarBills:active {
+transform:scale(101%);
+}
+
+DollarBills {transition-timing-function: ease-out;}
+.DollarBills{width:30%;}
+
+button:active {
+}
+
+button:hover {
+background-color:var(--butHover);
+}
+
+button {
+color:var(--textc);
+overflow:visible;
+border:3px solid;
+border-top-color:rgba(110,110,110,1);
+border-left-color:rgba(85,85,85,1);
+border-right-color:rgba(55,55,55,1);
+border-bottom-color:rgba(20,20,20,1);
+background-color:var(--button);
+}
+
+Scrollbar {
+background-color:red;
+}
+
+a:hover {
+text-decoration:underline;
+color:purple;
+}
+
+a {
+font-size:14;
+text-decoration:none;
+color:blue;
+}
+
+.header {
+border:2px solid var(--barders);
+background-color:var(--panelBack);
+box-shadow:2px 2px 4px #000000;
+}
+
+
+.allbuilds {
+border:2px solid var(--barders);
+background-color:var(--panelBack);
+}
+
+.clickyColumn{
+float: left;
+border:2px solid var(--barders);
+background-color:var(--panelBack);
+color:var(--textc);
+}
+.build {
+}
+
+.upbuild {
+float:left;
+}
+
+.buildcolumn {
+background-color:var(--panelBack);
+overflow: auto;
+overflow-x: hidden;
+}
+.upgradecolumn {
+background-color:var(--panelBack);
+border:2px solid var(--barders);
+overflow: auto;
+overflow-x: hidden;
+color:var(--textc);
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition:opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

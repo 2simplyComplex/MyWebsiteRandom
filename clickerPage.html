@@ -1,0 +1,75 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="clickerGame.js"></script>
+<script src="lokss.js"></script>
+<link rel="StyleSheet" href="clickerStyle.css">
+<div class="header">
+<h4 style="margin:0;">Clicker Game</h4>
+<a href="Mainpage.html" style="margin:0;">HOME</a>
+<button onclick="gradent()">text</button>
+<button style="margin:5;" onclick="ultrareset()">reset progress</button>
+</div>
+</head>
+<body>
+<div class="row">
+<div class="col-4 col-s-6">
+<div class="clickyColumn">
+<div class="row">
+<div class="col-2 col-s-3 coe-">money: <div id="moneyDisplay">0</div>
+<div id="clickMoney">0</div>
+</div>
+<div class="col-2 col-s-3 coe-">Clicks per second<div id="CPS">0</div></div>
+<img src="dollarbill.jpg" alt="money image" class="DollarBills" onclick="clickEarn()"></img>
+<div class="col-2 col-s-2 coe-">total money ever: <div id="allMoneyDisplay">0</div></div>
+</div>
+</div>
+</div>
+<div class="col-4 col-s-6">
+<div class="buildcolumn">
+<div class='allbuilds'>
+<p>Buildings</p>
+<button onclick="buyAmount()">buy <div id="buying">1</div></button>
+<div class="build">
+<button style="width:100%;" onclick="cursorAdd()" class="tooltip">Clicker<div class="tooltiptext" id="cursor pop">does 0.1 clicks per second</div><div style="margin:0;">Cost:<div style="margin:0;" id="cursorCost">$15</div></div><div id="cursorCount">0</div></button>
+</div>
+<div class="build">
+<button style="width:100%;" onclick="mouseAdd()" class="tooltip">mouse<div class="tooltiptext" id="mouse pop">does 1 clicks per second</div><div style="margin:0;">Cost:<div style="margin:0;" id="mouseCost">$100</div></div><div id="mouseCount">0</div></button>
+</div>
+<div class="build">
+<button style="width:100%;"onclick="keyboardAdd()" class="tooltip">keyboard<div class="tooltiptext" id="key pop">does 15 clicks per second</div><div style="margin:0;">Cost:<div style="margin:0;" id="keyboardCost">$1000</div></div><div id="keyboardCount">0</div></button>
+</div>
+<div class="build">
+<button style="width:100%;"onclick="laptopAdd()" class="tooltip">laptop<div class="tooltiptext" id="laptop pop">does 200 clicks per second</div><div style="margin:0;">Cost:<div style="margin:0;" id="laptopCost">$10000</div></div><div id="laptopCount">0</div></button>
+</div>
+<div class="build">
+<button style="width:100%;"onclick="rebirthAdd()" class="tooltip">rebirth<div class="tooltiptext" id="re pop">takes all money, upgrades and buildings away for a 2 times boost for buildings and clicking</div><div style="margin:0;">Cost:<div style="margin:0;" id="rebirthCost">5000000</div></div><div id="rebirthCount">0</div></button>
+</div>
+<div class="build">
+<button style="width:100%;"onclick="urebirthAdd()" class="tooltip">Ultra rebirth<div class="tooltiptext" id="ure pop">takes all money, upgrades, and buildings away for a 2 times boost for rebirths and clicking</div><div style="margin:0;">Cost in rebirths:<div style="margin:0;" id="urebirthCost">10</div></div><div id="urebirthCount">0</div></button>
+</div>
+</div>
+</div>
+</div>
+<div class="col-4 col-s-12">
+<div class="upgradecolumn">
+<div class="upbuild">
+<button onclick="U1buy()">upgrade1<div id="U1Cost">100</div></button>
+</div>
+<div class="upbuild">
+<button onclick="U2buy()">upgrade2<div id="U2Cost">1000</div></button>
+</div>
+<div class="upbuild">
+<button onclick="U3buy()">upgrade3<div id="U3Cost">11000</div></button>
+</div>
+<div class="upbuild">
+<button onclick="U4buy()">upgrade4<div id="U4Cost">50000</div></button>
+</div>
+<div class="upbuild">
+<button onclick="U5buy()">upgrade5<div id="U5Cost">800</div></button>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

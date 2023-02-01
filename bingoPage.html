@@ -1,0 +1,85 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<h1 style="text-align:center;">Play Some BINGO!</h1>
+<link rel="StyleSheet" href="bingoStyle.css"></link>
+<script src="bingoGame.js"></script>
+<style>
+.circle {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+</style>
+<a href="Mainpage.html">HOME</a>
+</head>
+<body>
+<button onclick="bingostart()" style="font-size:24;"> start bingo</button>
+<!--
+<button onclick="numberChooser()" style="font-size:24;"> next number</button>
+-->
+<button onclick="checkWin()" style="font-size:24;">BINGO!</button>
+<div id="mememe" style="font-size:30;"></div>
+<h3>A game Of Bingo</h3>
+<div id="wintag" style="visibility:hidden;font-size:24;" >BINGO You Win</div>
+<div>
+<table>
+<th>
+<td>B</td>
+<td>I</td>
+<td>N</td>
+<td>G</td>
+<td>O</td>
+</th>
+<tr>
+<td></td>
+<td id="B1" class="e" style="background-color:rgb(255,0,0);" onclick="checkBingo(B1)">1</td>
+<td id="I1" class="e" style="background-color:rgb(255,255,0);" onclick="checkBingo(I1)">2</td>
+<td id="N1" class="e" style="background-color:rgb(0,255,0);" onclick="checkBingo(N1)">3</td>
+<td id="G1" class="e" style="background-color:rgb(0,255,255);" onclick="checkBingo(G1)">4</td>
+<td id="O1" class="e" style="background-color:rgb(0,0,255);" onclick="checkBingo(O1)">5</td>
+</tr>
+<tr>
+<td></td>
+<td id="B2" class="e" style="background-color:rgb(255,0,0);" onclick="checkBingo(B2)">6</td>
+<td id="I2" class="e" style="background-color:rgb(255,255,0);" onclick="checkBingo(I2)">7</td>
+<td id="N2" class="e" style="background-color:rgb(0,255,0);" onclick="checkBingo(N2)">8</td>
+<td id="G2" class="e" style="background-color:rgb(0,255,255);" onclick="checkBingo(G2)">9</td>
+<td id="O2" class="e" style="background-color:rgb(0,0,255);" onclick="checkBingo(O2)">10</td>
+</tr>
+<tr>
+<td></td>
+<td id="B3" class="e" style="background-color:rgb(255,0,0);" onclick="checkBingo(B3)">11</td>
+<td id="I3" class="e" style="background-color:rgb(255,255,0);" onclick="checkBingo(I3)">12</td>
+<td id="N3" class="e" style="background-color:rgb(0,255,0);" onclick="checkBingo(N3)">13</td>
+<td id="G3" class="e" style="background-color:rgb(0,255,255);" onclick="checkBingo(G3)">14</td>
+<td id="O3" class="e" style="background-color:rgb(0,0,255);" onclick="checkBingo(O3)">15</td>
+</tr>
+<tr>
+<td></td>
+<td id="B4" class="e" style="background-color:rgb(255,0,0);" onclick="checkBingo(B4)">16</td>
+<td id="I4" class="e" style="background-color:rgb(255,255,0);" onclick="checkBingo(I4)">17</td>
+<td id="N4" class="e" style="background-color:rgb(0,255,0);" onclick="checkBingo(N4)">18</td>
+<td id="G4" class="e" style="background-color:rgb(0,255,255);" onclick="checkBingo(G4)">19</td>
+<td id="O4" class="e" style="background-color:rgb(0,0,255);" onclick="checkBingo(O4)">20</td>
+</tr>
+<tr>
+<td></td>
+<td id="B5" class="e" style="background-color:rgb(255,0,0);" onclick="checkBingo(B5)">21</td>
+<td id="I5" class="e" style="background-color:rgb(255,255,0);" onclick="checkBingo(I5)">22</td>
+<td id="N5" class="e" style="background-color:rgb(0,255,0);" onclick="checkBingo(N5)">23</td>
+<td id="G5" class="e" style="background-color:rgb(0,255,255);" onclick="checkBingo(G5)">24</td>
+<td id="O5" class="e" style="background-color:rgb(0,0,255);" onclick="checkBingo(O5)">25</td>
+</tr>
+<tr>
+<td class="circle" onClick="change()" id="circ">no</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+</div>
+</body>
+</html>
