@@ -1,0 +1,53 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="header">
+<h1 style="text-align:center;">The Great Website Of Random</h1>
+<link rel="StyleSheet" href="MainStyle.css"></link>
+<script src="MainAction.js"></script>
+<button onclick="changeMod()">NightMode</button>
+<br>
+</div>
+<style>
+.square {
+  height: 40px;
+  width: 40px;
+  background-color:rgb(0,0,0);
+}
+</style>
+<style>
+.circle {
+  height: 40px;
+  width: 40px;
+  background-color:rgb(0,0,0);
+  border-radius: 50%;
+  color:rgb(255,255,255);
+}
+</style>
+</head>
+<body class="day" id="changeDay">
+<div id="moveText" class="absolute">
+<p onclick="movingText()">move</p>
+</div>
+<a href="clickerPage.html">Clicker Game</a>
+<a href="bingoPage.html">BingoGame</a>
+<a href="translator.html">QwertyToDvorak</a>
+<p onclick="switchPhrase()" style="text-align:center;" id="hello1">hello world!</p>
+<p>what is your wifi like?</p>
+<select>
+<option>choose one</option>
+<option>so good that I hear it</option>
+<option>fantastic</option>
+<option>good</option>
+<option>average</option>
+<option>bad</option>
+<option>terrible</option>
+<option>worse than anything I have ever connected to</option>
+</select>
+<div></div>
+<input type="text area">name goes here</input>
+<audio src="rickroll.WMA" id='dont'><source src="rickroll.wma" type="audio/WMA"></audio>
+<div style="text-height:100;" onclick="" id="anyplace" >this can go anywhere</div>
+<div style="margin:20;" onclick="playaudio('dont');">click me</div>
+</body>
+</html>
